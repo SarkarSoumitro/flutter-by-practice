@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
-import 'counter_app_with_riverpod/HomeScreens.dart';
+import 'package:provider_riverpod/Handle%20multiple%20sate%20with%20provider/slider_provider.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +15,7 @@ class MyApp extends StatelessWidget {
     return ProviderScope(
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: Homescreens(),
+        home: SliderState(),
       ),
     );
   }
