@@ -1,5 +1,9 @@
 import 'package:go_router/go_router.dart';
 
+import '../features/movie/presentation/pages/artist_detail_page.dart';
+import '../features/movie/presentation/pages/movie_detail_page.dart';
+import '../features/movie/presentation/pages/movie_main_page.dart';
+
 final router = GoRouter(routes: [
   GoRoute(
     path: '/',
@@ -15,6 +19,6 @@ final router = GoRouter(routes: [
       path: '/artistId/:id',
       builder: (context, state) {
         final id = int.parse(state.pathParameters['id']!);
-        return ArtisDetailPage(artistId: id);
+        return ArtistDetailPage(artistId: id);
       })
 ]);
